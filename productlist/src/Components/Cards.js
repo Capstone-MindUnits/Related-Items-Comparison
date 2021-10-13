@@ -4,39 +4,23 @@ import React from 'react'
 
 export default function Cards() {
     return (
-        <div>
-            <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-wrap -m-4">
-                <div class="lg:w-1/4 p-10 w-1/2">
-                    <a href="" class="block relative h-100 rounded overflow-hidden">
-                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg"/>
+        <div className="Cards">
+            <section className="text-gray-600 body-font">
+            <div className="container px-5 py-10 mx-auto">
+                <div className="flex flex-wrap -m-4">
+                <div className="lg:w-1/4 p-10 w-1/2">
+                    <a href="" className="block relative h-60 rounded overflow-hidden">     
+                    <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg"/>
                     </a>
-                    <div class="mt-4">
-                    <h3 class="text-gray-500 text-xs tracking-widest title-font mr-40">CATEGORY</h3>
-                    <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-                    <p class="mt-1">$18.40</p>
+                    <h3 className="text-gray-500 text-xs tracking-widest title-font mr-40">CATEGORY</h3>
+                    <h2 className="text-gray-900 title-font text-lg font-medium">Expanded Product Name With Extra Text</h2>
+                    <p className="mt-1">$123</p>
+                    <div className="mt-4">
                     </div>
                 </div>
                 </div>
             </div>
-            </section>
-            <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-wrap -m-4">
-                <div class="lg:w-1/4 p-10 w-1/2">
-                    <a href="" class="block relative h-100 rounded overflow-hidden">
-                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg"/>
-                    </a>
-                    <div class="mt-4">
-                    <h3 class="text-gray-500 text-xs tracking-widest title-font mr-40">CATEGORY</h3>
-                    <h2 class="text-gray-900 title-font text-lg font-medium">Expanded Product Name With Extra Text</h2>
-                    <p class="mt-1">$18.40</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </section>
+            </section>   
         </div>
     )
 }
