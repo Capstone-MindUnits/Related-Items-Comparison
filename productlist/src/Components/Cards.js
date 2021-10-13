@@ -6,15 +6,15 @@ export default function Cards() {
     return (
         <div className="Cards">
             <section className="text-gray-600 body-font">
-            <div className="container px-5 py-10 mx-auto">
-                <div className="flex flex-wrap -m-4">
-                <div className="lg:w-1/4 p-10 w-1/2">
-                    <a href="" className="block relative h-60 rounded overflow-hidden">     
-                    <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg"/>
+            <div className="container px-20 py-10 mx-auto">
+                <div className="flex flex-wrap -m-12">    
+                <div className=" w-3/4 ml-10 mt-2.5 h-70 border-2 border-black">
+                    <a href="" className="block relative overflow-hidden mt-4">     
+                    <img alt="ecommerce" className="object-cover object-center w-full h-4/5 block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg"/>
                     </a>
                     <h3 className="text-gray-500 text-xs tracking-widest title-font mr-40">CATEGORY</h3>
                     <h2 className="text-gray-900 title-font text-lg font-medium">Expanded Product Name With Extra Text</h2>
-                    <p className="mt-1">$123</p>
+                    <p className="mb-5">$123</p>
                     <div className="mt-4">
                     </div>
                 </div>
