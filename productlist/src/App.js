@@ -14,9 +14,9 @@ class App extends React.Component {
     return (
       <div className="grid grid-cols-8 grid-rows-2 gap-4 min-h-screen m-3">
        
-          <div className="col-start-3 col-end-7 bg-grey-500 flex justify-center">
+          <div className="col-start-3 col-end-7 bg-grey-500 flex justify-center gap-2 ml-16">
           
-            <div className="row-start-1 row-end-2 ml-16"><Cards/></div>
+            <div className="row-start-1 row-end-2"><Cards/></div>
             
             <div className="row-start-1 row-end-2"><Cards/></div>
             <div className="row-start-1 row-end-2"><Cards/></div>
