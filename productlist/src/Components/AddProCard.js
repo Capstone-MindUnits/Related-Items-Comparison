@@ -1,24 +1,24 @@
 import React from 'react'
 
-
-
-export default function Cards() {
+export default function AddProCard() {
     return (
-        <div className="Cards">
-            
+        <div>
             <section className="text-gray-600 body-font">
             <div className="container px-20 py-8 mx-auto">
                 <div className="flex flex-wrap -m-8">    
                 <div className=" w-11/12  mt-8 h-80 border-2 border-gray-400 focus:border-blue-500">
                 
                     <a href="" className="block relative overflow-hidden"> 
-                      
+                       
                     <div alt="ecommerce" className="object-cover object-center w-full h-52 block bg-gray-200">
                     <ul>
                         <li>
                             <i className="far fa-star fa-sm text-black ml-36 mt-3"></i>
                         </li>
                     </ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-20 mt-14 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
                     </div>
                     </a>
                     <div className="text-gray-500 text-xs tracking-widest title-font mr-40">CATEGORY</div>
@@ -49,25 +49,7 @@ export default function Cards() {
                 </div>
                 </div>
             </div>
-            </section>   
+            </section>    
         </div>
     )
 }
-
-
-
-           
-// {/* <section class="text-gray-600 body-font">
-// <div class="container px-5 py-24 mx-auto max-w-7x1">
-//   <div class="flex flex-wrap -m-4"> 
-//     <div class="xl:w-1/3 md:w-1/2 p-4">
-//       <div class="bg-current p-6 rounded-none...">
-//         <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded w-full object-cover object-center mb-6" src="https://wisatamuda.com/wp-content/uploads/2019/02/1-Golden-Gate-Bridge-Gambar-dan-Foto-Tempat-Wisata-Terbaik-di-San-Fransisco-USA.jpg" alt="Image Size 720x400"/>
-//         <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-//         <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
-//         <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// </section>  */}
