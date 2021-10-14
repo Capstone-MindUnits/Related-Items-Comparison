@@ -5,16 +5,43 @@ import React from 'react'
 export default function Cards() {
     return (
         <div className="Cards">
+            
             <section className="text-gray-600 body-font">
             <div className="container px-20 py-10 mx-auto">
                 <div className="flex flex-wrap -m-12">    
-                <div className=" w-3/4 ml-10 mt-2.5 h-70 border-2 border-black">
-                    <a href="" className="block relative overflow-hidden mt-4">     
-                    <img alt="ecommerce" className="object-cover object-center w-full h-4/5 block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg"/>
+                <div className=" w-3/4  mt-10 border-2 border-gray-400 focus:border-blue-500">
+                
+                    <a href="" className="block relative overflow-hidden"> 
+                      
+                    <div alt="ecommerce" className="object-cover object-center w-full h-60 block bg-gray-200">
+                    <ul>
+                        <li>
+                            <i class="far fa-star fa-sm text-black ml-40"></i>
+                        </li>
+                    </ul>
+                    </div>
                     </a>
                     <h3 className="text-gray-500 text-xs tracking-widest title-font mr-40">CATEGORY</h3>
                     <h2 className="text-gray-900 title-font text-lg font-medium">Expanded Product Name With Extra Text</h2>
-                    <p className="mb-5">$123</p>
+                    <p className="mb-1">$123</p>
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+                        <ul class="flex justify mr-20">
+                        <li>
+                            <i class="fas fa-star fa-sm text-black mb-3 mr-1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-black mb-3 mr-1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-black mb-3 mr-1"></i>
+                        </li>
+                        <li>
+                            <i class="far fa-star fa-sm text-black mb-3 mr-1"></i>
+                        </li>
+                        <li>
+                            <i class="far fa-star fa-sm text-black mb-3 mr-1"></i>
+                        </li>
+                        </ul>
                     <div className="mt-4">
                     </div>
                 </div>
