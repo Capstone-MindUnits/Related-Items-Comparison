@@ -6,7 +6,8 @@ export default function Cards() {
             
             <section className="text-gray-600 body-font">
             <div className="container px-20 py-8 mx-auto">
-                <div className="flex flex-wrap -m-8">    
+                <div className="flex flex-wrap -m-8">  
+                  
                 <div className=" w-11/12  mt-8 h-80 border-2 border-gray-400 focus:border-blue-500">
                 
                     <a href="" className="block relative overflow-hidden"> 
@@ -19,7 +20,7 @@ export default function Cards() {
                     </ul>
                     </div>
                     </a>
-                    <div className="text-gray-500 text-xs tracking-widest title-font mr-40">CATEGORY</div>
+                    <div className="text-gray-500 text-xs title-font mr-40">CATEGORY</div>
                     <h4 className="text-gray-900 title-font text-sm font-medium">Expanded Product Name With Extra Text</h4>
                     <p className="mb-1 ml-1">$123</p>
                     
