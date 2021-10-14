@@ -1,24 +1,20 @@
 import React from 'react'
 
-export default function AddProCard() {
+export default function OutfitCards() {
     return (
         <div>
+            
             <section className="text-gray-600 body-font">
             <div className="container px-20 py-8 mx-auto">
                 <div className="flex flex-wrap -m-8">    
                 <div className=" w-11/12  mt-8 h-80 border-2 border-gray-400 focus:border-blue-500">
                 
                     <a href="" className="block relative overflow-hidden"> 
-                       
+                      
                     <div alt="ecommerce" className="object-cover object-center w-full h-52 block bg-gray-200">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 pt-2 text-black ml-44 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 pt-2 text-black ml-44" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-20 mt-14 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
                     </div>
                     </a>
                     <div className="text-gray-500 text-xs tracking-widest title-font mr-40">CATEGORY</div>
@@ -53,3 +49,5 @@ export default function AddProCard() {
         </div>
     )
 }
+
+
