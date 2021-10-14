@@ -25,7 +25,7 @@ export default function Cards() {
                     <h4 className="text-gray-900 title-font text-sm font-medium">Expanded Product Name With Extra Text</h4>
                     <p className="mb-1">$123</p>
                     
-                    <ul class="flex">
+                    <ul class="flex pl-1">
                         <li>
                             <i class="fas fa-star fa-xs text-black mb-2"></i>
                         </li>
