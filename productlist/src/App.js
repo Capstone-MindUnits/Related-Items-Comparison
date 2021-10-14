@@ -29,10 +29,10 @@ class App extends React.Component {
           </div>
 
           <div className="col-start-3 col-end-7 flex justify-center gap-x-10 ml-16">
-            <div className="row-start-1 row-end-2"><AddProCard/></div>           
-            <div className="row-start-1 row-end-2"><OutfitCards/></div>
-            <div className="row-start-1 row-end-2"><OutfitCards/></div>
-            <div className="row-start-1 row-end-2 "><OutfitCards/></div>
+            <div className="row-start-1 row-end-2 text-gray-500">YOUR OUTFIT<AddProCard/></div>           
+            <div className="row-start-1 row-end-2 mt-6"><OutfitCards/></div>
+            <div className="row-start-1 row-end-2 mt-6"><OutfitCards/></div>
+            <div className="row-start-1 row-end-2 mt-6"><OutfitCards/></div>
           </div>
       </div>
     );
