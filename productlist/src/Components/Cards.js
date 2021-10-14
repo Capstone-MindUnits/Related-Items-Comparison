@@ -16,7 +16,7 @@ export default function Cards() {
                     <div alt="ecommerce" className="object-cover object-center w-full h-52 block bg-gray-200">
                     <ul>
                         <li>
-                            <i className="far fa-star fa-sm text-black ml-28"></i>
+                            <i className="far fa-star fa-sm text-black ml-36 mt-3"></i>
                         </li>
                     </ul>
                     </div>
