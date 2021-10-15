@@ -2,7 +2,13 @@ import React from "react";
 import Popup from "reactjs-popup";
 
 
-export default function Cards() {
+export default function Cards(props) {
+    console.log("rima",props.results)
+    // {props.results&&props.results.map((result)=>{
+    //     return(
+
+    //     )
+    // })}
   return (
     <div className="Cards">
       <section className="text-gray-600 body-font">
@@ -10,6 +16,7 @@ export default function Cards() {
           <div className="flex flex-wrap -m-8">
             <div className=" w-11/12  mt-8 h-80 border-2 border-gray-400 focus:border-blue-500">
               <a href="" className="block relative overflow-hidden">
+              
                 <div
                   alt="ecommerce"
                   className="object-cover object-center w-full h-52 block bg-gray-200"
@@ -19,7 +26,14 @@ export default function Cards() {
                       <i className="far fa-star fa-sm text-black ml-36 mt-3"></i>
                     </li>
                   </ul>
+                  {props.results&&props.results.map((e,key)=>{
+                        return(
+                            <div>
+                  <img src={e} alt="some image"/>
 
+                            </div>
+                        )
+                  })}
                   <div className="pop"> 
                   <Popup
                     trigger={
@@ -139,17 +153,4 @@ export default function Cards() {
   );
 }
 
-// {/* <section class="text-gray-600 body-font">
-// <div class="container px-5 py-24 mx-auto max-w-7x1">
-//   <div class="flex flex-wrap -m-4">
-//     <div class="xl:w-1/3 md:w-1/2 p-4">
-//       <div class="bg-current p-6 rounded-none...">
-//         <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded w-full object-cover object-center mb-6" src="https://wisatamuda.com/wp-content/uploads/2019/02/1-Golden-Gate-Bridge-Gambar-dan-Foto-Tempat-Wisata-Terbaik-di-San-Fransisco-USA.jpg" alt="Image Size 720x400"/>
-//         <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-//         <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
-//         <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// </section>  */}
+
