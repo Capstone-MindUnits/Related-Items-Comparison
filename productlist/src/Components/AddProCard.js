@@ -25,21 +25,21 @@ export default function AddProCard() {
                     <h4 className="text-gray-900 title-font text-sm font-medium">Expanded Product Name With Extra Text</h4>
                     <p className="mb-1 ml-1">$123</p>
                     
-                    <ul class="flex pl-1">
+                    <ul className="flex pl-1">
                         <li>
-                            <i class="fas fa-star fa-xs text-black mb-2"></i>
+                            <i className="fas fa-star fa-xs text-black mb-2"></i>
                         </li>
                         <li>
-                            <i class="fas fa-star fa-xs text-black mb-3 mr-1"></i>
+                            <i className="fas fa-star fa-xs text-black mb-3 mr-1"></i>
                         </li>
                         <li>
-                            <i class="fas fa-star fa-xs text-black mb-3 mr-1"></i>
+                            <i className="fas fa-star fa-xs text-black mb-3 mr-1"></i>
                         </li>
                         <li>
-                            <i class="far fa-star fa-xs text-black mb-3 mr-1"></i>
+                            <i className="far fa-star fa-xs text-black mb-3 mr-1"></i>
                         </li>
                         <li>
-                            <i class="far fa-star fa-xs text-black mb-3 mr-1"></i>
+                            <i className="far fa-star fa-xs text-black mb-3 mr-1"></i>
                         </li>
                         </ul>
 
