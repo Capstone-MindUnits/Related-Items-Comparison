@@ -1,9 +1,8 @@
 import React from "react";
-import "./App.css";
+
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import Cards from "./Components/Cards";
-import AddProCard from "./Components/AddProCard";
 import OutfitCards from "./Components/OutfitCards";
 import config from "./config/config";
 
@@ -14,6 +13,7 @@ class App extends React.Component {
       products: [],
     };
     this.getData = this.getData.bind(this);
+    
   }
 
   getData() {

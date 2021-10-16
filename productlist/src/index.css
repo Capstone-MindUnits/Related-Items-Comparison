@@ -48,7 +48,7 @@ p{
 
 .wrapper{
   display: flex;
-  overflow-x: auto;
+  overflow: auto;
 }
 /* .wrapper::-webkit-scrollbar{
   width: 0;
