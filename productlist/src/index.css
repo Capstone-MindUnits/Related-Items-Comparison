@@ -46,6 +46,10 @@ p{
   border: 1px solid #cfcece;
 }
 
-h6{
-  font-size: 5px;
+.wrapper{
+  display: flex;
+  overflow-x: auto;
 }
+/* .wrapper::-webkit-scrollbar{
+  width: 0;
+} */

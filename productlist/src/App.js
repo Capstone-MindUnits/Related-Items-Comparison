@@ -23,7 +23,7 @@ class App extends React.Component {
         { headers: { authorization: `${config.Token}` } }
       )
       .then((data) => {
-        console.log(data.data.results[0].photos);
+        console.log(data.data.results);
         this.setState({
           products: data.data,
         });
@@ -35,37 +35,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="grid grid-cols-6 grid-rows-2 gap-2 min-h-screen m-3">
+      <div className="grid grid-cols-6 justify-center grid-rows-2 gap-2 min-h-screen m-3">
 
         <div className="col-start-2 col-end-6 flex justify-center gap-x-6">
           <div className="row-start-1 row-end-2 text-gray-500">
-          <div className="-mx-1">RELATED PRODUCT</div>
+          <div className="product -mx-1">RELATED PRODUCT</div>
             <Cards results={this.state.products.results}/>
-          </div>
-          <div className="row-start-1 row-end-2 mt-6">
-            <Cards />
-          </div>
-          <div className="row-start-1 row-end-2 mt-6">
-            <Cards />
-          </div>
-          <div className="row-start-1 row-end-2 mt-6">
-            <Cards />
           </div>
         </div>
         
         <div className="col-start-2 col-end-6 flex justify-center gap-x-6">
-          <div className="row-start-1 row-end-2 text-gray-500">
-          
-            <AddProCard />
-          </div>
+         
           <div className="row-start-1 row-end-2 mt-6">
-            <OutfitCards />
-          </div>
-          <div className="row-start-1 row-end-2 mt-6">
-            <OutfitCards />
-          </div>
-          <div className="row-start-1 row-end-2 mt-6">
-            <OutfitCards />
+            <OutfitCards results={this.state.products.results}/>
           </div>
         </div>
       </div>

@@ -1,10 +1,17 @@
 import React from 'react'
-
-export default function OutfitCards() {
+import AddProCard from "./AddProCard";
+export default function OutfitCards(props) {
+    {props.results&&console.log(props.results[0].photos[0].url)}
     return (
-        <div>
-            
-            <section className="text-gray-600 body-font">
+        <div className="wrapper">
+             <div className="-my-6 row-start-1 row-end-2 text-gray-500">
+          
+          <AddProCard />
+        </div>
+        {props.results&&props.results.map((e,key)=>{
+             return(
+                <div key={key}>
+                <section className="text-gray-600 body-font">
             <div className="container px-20 py-4 mx-auto">
                 <div className="flex flex-wrap -m-4">    
                 <div className=" w-11/12  mt-8 h-80 border-2 border-gray-400 focus:border-blue-500">
@@ -15,11 +22,12 @@ export default function OutfitCards() {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 pt-2 text-black ml-44" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
+                        <div><img  className="" src={e.photos[0].url}/></div>  
                     </div>
                     </a>
                     <div className="text-gray-500 text-xs title-font mr-40">CATEGORY</div>
-                    <h4 className="text-gray-900 title-font text-sm font-medium">Expanded Product Name With Extra Text</h4>
-                    <p className="mb-1 ml-1">$123</p>
+                    <h4 className="text-gray-900 title-font text-sm font-medium">{e.name}</h4>
+                    <p className="mb-1 ml-1">{e.original_price}</p>
                     
                     <ul className="flex pl-1">
                         <li>
@@ -45,7 +53,10 @@ export default function OutfitCards() {
                 </div>
                 </div>
             </div>
-            </section>   
+            </section> 
+            </div>
+        )
+      })}  
         </div>
     )
 }
