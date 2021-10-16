@@ -3,11 +3,11 @@ import Popup from "reactjs-popup";
 
 
 export default function Cards(props) {
+  {props.results&&console.log(props.results[0].photos[0].url)}
     
-    const [resultsState] = useState(props);
     const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
-  console.log("rima",resultsState)
+  
   return (
     <div className="Cards">
       <section className="text-gray-600 body-font">
@@ -25,6 +25,8 @@ export default function Cards(props) {
                       <i className="far fa-star fa-sm text-black ml-36 mt-3"></i>
                     </li>
                   </ul>
+
+                          <img  className="-mx-6 w-10" src=""/>
 
                       <button type="button" className="button ml-8 p-16 border-2 border-gray-200 bg-gray-200" onClick={(e) => { e.preventDefault(); setOpen(o => !o) }}>
                       </button>
@@ -90,7 +92,7 @@ export default function Cards(props) {
                         </div>
 
                         <div className="tailwind flex gap-28 ml-36 text-sm">
-                        <div>react tailwind styl</div>
+                        <div>react tailwind style yes</div>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
