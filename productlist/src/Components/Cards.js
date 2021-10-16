@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useState } from 'react';
 import Popup from "reactjs-popup";
 
 
-export default function Cards(props) {
-    console.log("rima",props.results)
-    // {props.results&&props.results.map((result)=>{
-    //     return(
-
-    //     )
-    // })}
+export default function Cards() {
+    // console.log("rima",props.results)
+    
+    const [open, setOpen] = useState(false);
+  const closeModal = () => setOpen(false);
   return (
     <div className="Cards">
       <section className="text-gray-600 body-font">
@@ -26,31 +24,20 @@ export default function Cards(props) {
                       <i className="far fa-star fa-sm text-black ml-36 mt-3"></i>
                     </li>
                   </ul>
-                  {props.results&&props.results.map((e,key)=>{
-                        return(
-                            <div>
-                  <img src={e} alt="some image"/>
 
-                            </div>
-                        )
-                  })}
-                  <div className="pop"> 
-                  <Popup
-                    trigger={
-                      <div className="box-border mt-3 ml-6 h-32 w-40 p-4 border-2 border-gray-200 bg-gray-200" ></div>
-                    }
-                    modal
-                    onClick={(e)=>e.preventDefault()}
-                  >
-                      
-                    <div className="box-border mt-24  w-max h-80 ml-60 border-2 border-gray-400 bg-white">
+                      <button type="button" className="button ml-8 p-16 border-2 border-gray-200 bg-gray-200" onClick={(e) => { e.preventDefault(); setOpen(o => !o) }}>
+                      </button>
+                      <div className="pop "> 
+                  <Popup open={open} closeOnDocumentClick onClose={closeModal}>
+                 
+                  <div className="box-border mt-24  w-max h-80 ml-60 border-2 border-gray-400 bg-white">
                       <div className="compare">COMPARING</div>
                       <div className="names flex gap-36  mt-3">
                       <div className="name1">Product Short Name</div>
                       <div className="name2">Product Short Name</div>
                       </div>
                       
-                        <div className="gmo flex gap-24 mb-1  text-sm">
+                        <div className="gmo flex gap-28 mb-1  text-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
@@ -60,7 +47,7 @@ export default function Cards(props) {
                         </svg>
                         </div>
 
-                        <div className="genetic flex gap-16 mb-1  text-sm">
+                        <div className="genetic flex gap-20 mb-1  text-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
@@ -70,7 +57,7 @@ export default function Cards(props) {
                         </svg>
                         </div>
 
-                        <div className="madeup flex gap-24 mb-1  text-sm">
+                        <div className="madeup flex gap-28 mb-1  text-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
@@ -80,38 +67,36 @@ export default function Cards(props) {
                         </svg>
                         </div>
                         
-                        <div className="matter flex gap-28 mb-1  text-sm">
+                        <div className="matter flex gap-32 mb-1  text-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <div>It doesn't matters w</div>
                         </div>
                         
-                        <div className="feature flex gap-28 mb-1 text-sm">
+                        <div className="feature flex gap-32 mb-1 text-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <div>Features description</div>
                         </div>
 
-                        <div className="redux flex gap-28 ml-28 mb-1 text-sm">
+                        <div className="redux flex gap-36 ml-28 mb-1 text-sm">
                         <div>React hooks and redux</div>                      
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         </div>
 
-                        <div className="tailwind flex gap-28 ml-36 text-sm">
+                        <div className="tailwind flex gap-36 ml-36 text-sm">
                         <div>react tailwind styl</div>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         </div>
-                       
-                    </div>
+                  </div>   
                   </Popup>
-                  </div> 
-
+                  </div>
                 </div>
               </a>
               <div className="text-gray-500 text-xs title-font mr-40">

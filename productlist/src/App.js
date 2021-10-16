@@ -32,7 +32,7 @@ getData(){
  }
 
   render() {
-    console.log(this.state.products.results)
+    console.log((this.state.products.results))
     return (
       <div className="grid grid-cols-8 grid-rows-2 gap-4 min-h-screen m-3">
         <div className="col-start-3 col-end-7 flex justify-center gap-x-10 ml-16">
