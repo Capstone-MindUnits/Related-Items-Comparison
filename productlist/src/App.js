@@ -14,12 +14,12 @@ class App extends React.Component {
     };
     this.getData = this.getData.bind(this);
     
+    
   }
 
   getData() {
-    axios
-      .get(
-        `https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp/products/40344/styles`,
+
+    axios.get(`https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp/products/40393/styles`,
         { headers: { authorization: `${config.Token}` } }
       )
       .then((data) => {
@@ -27,10 +27,12 @@ class App extends React.Component {
         this.setState({
           products: data.data,
         });
-      });
+      })
   }
+
   componentDidMount() {
     this.getData();
+  
   }
 
   render() {
