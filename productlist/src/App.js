@@ -12,15 +12,12 @@ class App extends React.Component {
     this.state = {
       products: [],
     };
-    this.getData = this.getData.bind(this);
-    
-    
+    this.getData = this.getData.bind(this);    
   }
 
   getData() {
-
     axios.get(`https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp/products/40393/styles`,
-        { headers: { authorization: `${config.Token}` } }
+        { headers: { authorization: `${config.Token}`}}
       )
       .then((data) => {
         console.log(data.data.results);
@@ -32,7 +29,6 @@ class App extends React.Component {
 
   componentDidMount() {
     this.getData();
-  
   }
 
   render() {
@@ -46,8 +42,7 @@ class App extends React.Component {
           </div>
         </div>
         
-        <div className="col-start-2 col-end-6 flex justify-center gap-x-6">
-         
+        <div className="col-start-2 col-end-6 flex justify-center gap-x-6">        
           <div className="row-start-1 row-end-2 mt-6">
             <OutfitCards results={this.state.products.results}/>
           </div>
