@@ -1,7 +1,26 @@
 .App {
   text-align: center;
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,9 +43,9 @@
 
 .App-link {
   color: rgb(112, 76, 182);
-}
+} */
 
-@keyframes App-logo-float {
+/* @keyframes App-logo-float {
   0% {
     transform: translateY(0);
   }
@@ -36,4 +55,4 @@
   100% {
     transform: translateY(0px);
   }
-}
+} */

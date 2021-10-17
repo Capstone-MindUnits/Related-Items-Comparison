@@ -1,5 +1,5 @@
 import React from "react";
-
+import './App.css';
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import Cards from "./Components/Cards";

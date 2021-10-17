@@ -12,7 +12,7 @@ export default function OutfitCards(props) {
              return(
                 <div key={key}>
                 <section className="text-gray-600 body-font">
-            <div className="container px-20 py-4 mx-auto">
+            <div className="container px-16 py-4 mx-auto">
                 <div className="flex flex-wrap -m-4">    
                 <div className=" w-11/12  mt-8 h-80 border-2 border-gray-400 focus:border-blue-500">
                 

@@ -3,7 +3,7 @@ import React from 'react'
 export default function AddProCard() {
     return (
         <div>
-            <section className="text-gray-600 body-font">
+            <section className="text-gray-600 body-font ml-1">
             <div className="container px-20 py-4 mx-auto">
             <div className="-mx-4">YOUR OUTFIT</div>
                 <div className="flex flex-wrap -m-4">    

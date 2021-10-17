@@ -9,7 +9,7 @@ export default function Cards(props) {
              {props.results&&props.results.map((e,key)=>{
   return(
 <div key={key}>
-          <section className="text-gray-600 body-font">
+          <section className="text-gray-600 body-font ml-1">
  
           <div className="container px-20 mx-auto">
          
